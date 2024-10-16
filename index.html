@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato</title>
+
+    <!--------------------------------------------------------------
+           ---------------- Style CSS link--------------
+     --------------------------------------------------------------->
+    <link rel="stylesheet" href="./style.css">
+    <!--------------------------------------------------------------
+           ---------------- Bootstrap link--------------
+     --------------------------------------------------------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--------------------------------------------------------------
+           ---------------- Google Fonts--------------
+     --------------------------------------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Protest+Strike&display=swap"
+        rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+    <!--------------------------------------------------------------
+           ---------------- Google Icon link--------------
+     --------------------------------------------------------------->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+</head>
+
+<body>
+    <!--------------------------------------------------------------
+           ---------------- Header--------------
+     --------------------------------------------------------------->
+    <header>
+        <nav class="navbar navbar-expand-lg px-5">
+            <div class="container-fluid">
+                <a class="navbar-brand text-light" href="#">Get the app</a>
+                <a class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="material-symbols-outlined bg-light text-light">
+                        lists
+                    </span>
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active text-light" aria-current="page" href="#">Investor Relations</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#">Add restaurant</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#" data-bs-toggle="modal"
+                                data-bs-target="#loginModal">Log in</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-light" href="#" data-bs-toggle="modal"
+                                data-bs-target="#SignUpModal">Sign up</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!--------------------------------------------------------------
+           ---------------- banner video--------------
+     --------------------------------------------------------------->
+        <div class="container-fluid" id="headerBg">
+            <video autoplay muted loop id="bgVideo">
+                <source src="./assets/AddZomato.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </header>
+    <!--------------------------------------------------------------
+           ---------------- contentOne--------------
+     --------------------------------------------------------------->
+    <section id="contentOne">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="centered-content">
+                                    <h1 class="zomato text-light" style="font-size: 70px; font-weight: bold;">zomato
+                                    </h1>
+                                    <p class="zomato text-light" style="font-size: 26px;">Discover the best food &
+                                        drinks in Chennai</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="co-12 col-lg-1 col-md-0 col-sm-0"></div>
+                            <div class="col-12 col-lg-3 col-md-4 col-sm-12 d-flex justify-content-center mb-5">
+                                <div class="card" style="width: 21rem;">
+                                    <div class="card-header">
+                                        <img src="./assets/cardBg-1.avif" width="336px" height="170px"
+                                            style="border-radius: 20px 20px 0px 0px;" alt="">
+                                    </div>
+                                    <div class="card-body mb-0">
+                                        <h6>Order Online</h6>
+                                        <p style="font-size: 15px;">Stay home and order to your doorstep</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-4 col-md-4 col-sm-12 d-flex justify-content-center mb-5">
+                                <div class="card" style="width: 21rem;">
+                                    <div class="card-header">
+                                        <img src="./assets/cardBg-2.avif" width="336px" height="170px"
+                                            style="border-radius: 20px 20px 0px 0px;" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h6>Order Online</h6>
+                                        <p style="font-size: 15px;">Stay home and order to your doorstep</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-3 col-md-4 col-sm-12 d-flex justify-content-center mb-5">
+                                <div class="card" style="width: 21rem;">
+                                    <div class="card-header">
+                                        <img src="./assets/cardBg-3.jpg" width="336px" height="170px"
+                                            style="border-radius: 20px 20px 0px 0px;" alt="">
+                                    </div>
+                                    <div class="card-body">
+                                        <h6>Order Online</h6>
+                                        <p style="font-size: 15px;">Stay home and order to your doorstep</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="co-12 col-lg-1 col-md-0 col-sm-0"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------------------------------------------------------------
+           ---------------- contentTwo --------------
+     --------------------------------------------------------------->
+    <section id="contentTwo">
+        <div class="container">
+            <div class="row mx-3">
+                <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+                    <div class="container">
+                        <h1>Collections</h1>
+                        <p>Explore curated lists of top restaurants, cafes, pubs, and bars in Chennai, based on trends
+                        </p>
+                    </div>
+                </div>
+                <div
+                    class="col-12 col-lg-6 col-md-6 col-sm-12 d-flex justify-content-lg-end justify-content-md-end justify-content-center">
+                    <div class="container d-flex justify-content-lg-end justify-content-md-end justify-content-center"
+                        style="margin-top: 30px;">
+                        <a href="#" style="color: #e9a129; text-decoration: none;">All collections in Chennai</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------------------------------------------------------------
+           ---------------- contentThree --------------
+     --------------------------------------------------------------->
+    <section id="contentThree">
+        <div class="container" style="margin-top: 10px;">
+            <div class="row mx-3 mb-5">
+                <div class="col-12 col-lg-3 col-md-6 col-sm-6 mb-3">
+                    <div class="card"
+                        style="background-image: url(./assets/shop1.jpg); background-size: cover; background-position: center; height: 300px;">
+                        <div class="d-flex flex-column justify-content-end h-100 m-3">
+                            <h6 class="text-light">Newly Opened Places</h6>
+                            <a class="text-light" href="#">16 Places</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-6 col-sm-6 mb-3">
+                    <div class="card"
+                        style="background-image: url(./assets/shop2.jpg); background-size: cover; background-position: center; height: 300px;">
+                        <div class="d-flex flex-column justify-content-end h-100 m-3">
+                            <h6 class="text-light">Top Trending Sports</h6>
+                            <a class="text-light" href="#">37 Places</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-6 col-sm-6 mb-3">
+                    <div class="card"
+                        style="background-image: url(./assets/shop3.jpg); background-size: cover; background-position: center; height: 300px;">
+                        <div class="d-flex flex-column justify-content-end h-100 m-3">
+                            <h6 class="text-light">Best Insta-Worthy Places</h6>
+                            <a class="text-light" href="#">17 Places</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-3 col-md-6 col-sm-6 mb-3">
+                    <div class="card"
+                        style="background-image: url(./assets/shop4.jpg); background-size: cover; background-position: center; height: 300px;">
+                        <div class="d-flex flex-column justify-content-end h-100 m-3">
+                            <h6 class="text-light">South Indian Special</h6>
+                            <a class="text-light" href="#">41 Places</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------------------------------------------------------------
+           ---------------- contentFour --------------
+     --------------------------------------------------------------->
+    <section id="contentFour">
+        <div class="container">
+            <div class="row mb-4">
+                <div class="col-12 mt-5">
+                    <div class="container">
+                        <h1 class="ms-2" style="font-size: 35px;">
+                            Popular localities in and around <b style="font-weight: 500;">Chennai</b>
+                        </h1>
+                    </div>
+                </div>
+            </div>
+            <div class="row mx-2 mb-4">
+                <div class="col-12 col-lg-4 col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body d-flex justify-content-between align-items-center px-4 pb-2 pt-3">
+                            <div>
+                                <a href="#" class="text-dark" style="text-decoration: none;">
+                                    <h5 class="card-title" style="font-size: 17px;">T Nagar</h5>
+                                    <p class="card-text" style="font-size: 15px;">380 Places</p>
+                                </a>
+                            </div>
+                            <span class="material-symbols-outlined text-muted" style="font-size: 15px;">
+                                arrow_forward_ios
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body d-flex justify-content-between align-items-center px-4 pb-2 pt-3">
+                            <div>
+                                <a href="#" class="text-dark" style="text-decoration: none;">
+                                    <h5 class="card-title" style="font-size: 17px;">Nungampakkam</h5>
+                                    <p class="card-text" style="font-size: 15px;">328 Places</p>
+                                </a>
+                            </div>
+                            <span class="material-symbols-outlined text-muted" style="font-size: 15px;">
+                                arrow_forward_ios
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body d-flex justify-content-between align-items-center px-4 pb-2 pt-3">
+                            <div>
+                                <a href="#" class="text-dark" style="text-decoration: none;">
+                                    <h5 class="card-title" style="font-size: 17px;">Velachery</h5>
+                                    <p class="card-text" style="font-size: 15px;">529 Places</p>
+                                </a>
+                            </div>
+                            <span class="material-symbols-outlined text-muted" style="font-size: 15px;">
+                                arrow_forward_ios
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mx-2 mb-4">
+                <div class="col-12 col-lg-4 col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body d-flex justify-content-between align-items-center px-4 pb-2 pt-3">
+                            <div>
+                                <a href="#" class="text-dark" style="text-decoration: none;">
+                                    <h5 class="card-title" style="font-size: 17px;">Adayar</h5>
+                                    <p class="card-text" style="font-size: 15px;">230 Places</p>
+                                </a>
+                            </div>
+                            <span class="material-symbols-outlined text-muted" style="font-size: 15px;">
+                                arrow_forward_ios
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body d-flex justify-content-between align-items-center px-4 pb-2 pt-3">
+                            <div>
+                                <a href="#" class="text-dark" style="text-decoration: none;">
+                                    <h5 class="card-title" style="font-size: 17px;">Anna Nagar East</h5>
+                                    <p class="card-text" style="font-size: 15px;">389 Places</p>
+                                </a>
+                            </div>
+                            <span class="material-symbols-outlined text-muted" style="font-size: 15px;">
+                                arrow_forward_ios
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body d-flex justify-content-between align-items-center px-4 pb-2 pt-3">
+                            <div>
+                                <a href="#" class="text-dark" style="text-decoration: none;">
+                                    <h5 class="card-title" style="font-size: 17px;">Thuraipakkam</h5>
+                                    <p class="card-text" style="font-size: 15px;">275 Places</p>
+                                </a>
+                            </div>
+                            <span class="material-symbols-outlined text-muted" style="font-size: 15px;">
+                                arrow_forward_ios
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mx-2 mb-4">
+                <div class="col-12 col-lg-4 col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body d-flex justify-content-between align-items-center px-4 pb-2 pt-3">
+                            <div>
+                                <a href="#" class="text-dark" style="text-decoration: none;">
+                                    <h5 class="card-title" style="font-size: 17px;">Mylapore</h5>
+                                    <p class="card-text" style="font-size: 15px;">181 Places</p>
+                                </a>
+                            </div>
+                            <span class="material-symbols-outlined text-muted" style="font-size: 15px;">
+                                arrow_forward_ios
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-md-6 mb-3">
+                    <div class="card">
+                        <div class="card-body d-flex justify-content-between align-items-center px-4 pb-2 pt-3">
+                            <div>
+                                <a href="#" class="text-dark" style="text-decoration: none;">
+                                    <h5 class="card-title" style="font-size: 17px;">Alwarpet</h5>
+                                    <p class="card-text" style="font-size: 15px;">149 Places</p>
+                                </a>
+                            </div>
+                            <span class="material-symbols-outlined text-muted" style="font-size: 15px;">
+                                arrow_forward_ios
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 col-md-6 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body d-flex justify-content-between align-items-center px-4 pb-2 pt-3">
+                            <div class="d-flex justify-content-center">
+                                <a href="#" class="text-dark" style="text-decoration: none;">
+                                    <h5 class="card-title" style="font-size: 17px;">See more</h5>
+                                </a>
+                            </div>
+                            <span class="material-symbols-outlined text-muted" style="font-size: 15px;">
+                                arrow_forward_ios
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------------------------------------------------------------
+           ---------------- ContentFive --------------
+     --------------------------------------------------------------->
+    <section id="ContentFive">
+        <div class="container-fluid">
+            <div class="row" style="margin-top: 70px;">
+                <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+                    <div class="d-flex justify-content-center my-5">
+                        <img src="./assets/ADD.avif" width="450rem" alt="mobileAdd">
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6 col-md-6 col-sm-12">
+                    <div class="my-5">
+                        <h1 class="mb-4" style="font-weight: 500;">Get the Zomato app</h1>
+                        <p class="mb-5">We will send you a link, open it on your phone to download the app</p>
+                        <label for="" class="mb-1">Mobile</label>
+                        <div class="input-group mb-3 pe-5">
+                            <input type="text" class="mb-3"
+                                style="padding: 10px; border-radius: 10px; outline: none; border: none; box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;"
+                                placeholder="+91" aria-label="+91" aria-describedby="button-addon2">
+                            <button class="btn btn-outline-secondary text-light ms-2 mb-3"
+                                style="background-color: #ef4f5f; border: none; border-radius: 10px;" type="button"
+                                id="button-addon2">Share App Link</button>
+                        </div>
+                        <span class="text-muted mb-3">Download app from</span>
+                        <div class="d-flex mt-5">
+                            <img src="./assets/googlePlay.webp" width="130px" height="40px" alt="googlePlay">
+                            <img src="./assets/apple.webp" class="ms-3" width="130px" height="40px" alt="apple">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------------------------------------------------------------
+           ---------------- ContentSevent --------------
+     --------------------------------------------------------------->
+    <section id="ContentSevent">
+        <div class="container my-5">
+            <div class="panel-group" id="accordion">
+                <div class="row">
+                    <div class="col-12 col-md-12 col-sm-12 col-lg-12 mb-5">
+                        <h1>Explore options near me</h1>
+                    </div>
+                </div>
+                <div class="panel panel-default card mb-4">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                <div class="row">
+                                    <div class="col-6 col-md-6 col-sm-6 col-lg-6" style="font-size: 20px;">
+                                        Popular Cuisines Near Me
+                                    </div>
+                                    <div class="col-6 col-md-6 col-sm-6 col-lg-6">
+
+                                    </div>
+                                </div>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseOne" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Bakery near meBeverages near meBiryani near meBurger near meChinese near meDesserts near
+                            meIce Cream near meJuices near meMomos near meMughlai near meNorth Indian near mePizza near
+                            meRolls near meSandwich near meSeafood near meShake near meSichuan near meSouth Indian near
+                            meStreet near meTea near me
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default card mb-4">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                <div class="col-6 col-md-6 col-sm-6 col-lg-6" style="font-size: 20px;">
+                                    Popular Restaurant Types Near me
+                                </div>
+                                <div class="col-6 col-md-6 col-sm-6 col-lg-6">
+
+                                </div>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseTwo" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Bakeries near meBars near meBeverage Shops near meBhojanalya near meCafés near meCasual
+                            Dining near meClubs near meCocktail Bars near meConfectioneries near meDessert Parlors near
+                            meDhabas near meFine Dining near meFood Courts near meFood Trucks near meIrani Cafes near
+                            meKiosks near meLounges near mePaan Shop near meQuick Bites near meShacks near meSweet Shops
+                            near me
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default card mb-4">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                <div class="col-6 col-md-6 col-sm-6 col-lg-6" style="font-size: 20px;">
+                                    Top Restaurant Chains
+                                </div>
+                                <div class="col-6 col-md-6 col-sm-6 col-lg-6">
+
+                                </div>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseThree" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            BikanervalaBurger KingDomino'sKFCKrispy KremeMcDonald'sMoti Mahal DeluxPizza HutWOW! Momo
+                        </div>
+                    </div>
+                </div>
+                <div class="panel panel-default card mb-4">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+                                <div class="col-6 col-md-6 col-sm-6 col-lg-6" style="font-size: 20px;">
+                                    Cities We Deliver To
+                                </div>
+                                <div class="col-6 col-md-6 col-sm-6 col-lg-6">
+
+                                </div>
+                            </a>
+                        </h4>
+                    </div>
+                    <div id="collapseFour" class="panel-collapse collapse">
+                        <div class="panel-body">
+                            Delhi
+                            NCRKolkataMumbaiBengaluruPuneHyderabadChennaiLucknowKochiJaipurAhmedabadChandigarhGoaIndoreGangtokNashikOotyShimlaLudhianaGuwahatiAmritsarKanpurAllahabadAurangabadBhopalRanchiVisakhapatnamBhubaneswarCoimbatoreMangaloreVadodaraNagpurAgraDehradunMysorePuducherrySuratVaranasiPatnaUdaipurSrinagarKhajurahoNeemranaCuttackTrivandrumHaridwarLehPushkarRajkotMaduraiKozhikodeAlappuzhaThrissurManipalVijayawada
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--------------------------------------------------------------
+           ---------------- contentSix --------------
+     --------------------------------------------------------------->
+    <section id="contentSix">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Footer -->
+                    <footer class="bg-light text-dark pb-4">
+                        <div class="container text-md-left">
+                            <div class="row">
+                                <div class="offset-1 col-3 col-md-3 col-lg-3 col-xl-3">
+                                    <h1 class="text-left" style="font-size: 40px; font-weight: bold;">Zomato</h1>
+                                </div>
+                            </div>
+                            <div class="row text-md-left d-flex justify-content-center">
+                                <!-- About Zomato Section -->
+                                <div class="col-md-2 col-lg-2 col-xl-2 mt-2">
+                                    <ul>
+                                        <li class="text-uppercase mb-4 font-weight-bold">About Zomato</li>
+                                        <li class="text-muted">Who We Are</li><br>
+                                        <li class="text-muted">Blog</li><br>
+                                        <li class="text-muted">Investor Relations</li><br>
+                                        <li class="text-muted">Press Kit</li><br>
+                                        <li class="text-muted">Contact Us</li>
+                                    </ul>
+                                </div>
+
+                                <!-- Zomaverse Section -->
+                                <div class="col-md-2 col-lg-2 col-xl-2 mt-3">
+                                    <ul>
+                                        <li class="text-uppercase mb-4 font-weight-bold">Zomaverse</li>
+                                        <li class="text-muted">Zomato</li><br>
+                                        <li class="text-muted">Blinkit</li><br>
+                                        <li class="text-muted">Feeding India</li><br>
+                                        <li class="text-muted">Hyperpure</li><br>
+                                        <li class="text-muted">Zomaland</li>
+                                    </ul>
+                                </div>
+
+                                <!-- For Restaurants Section -->
+                                <div class="col-md-2 col-lg-2 col-xl-2 mt-3">
+                                    <ul>
+                                        <li class="text-uppercase mb-4 font-weight-bold">For Restaurants</li>
+                                        <li class="text-muted">Partner With Us</li><br>
+                                        <li class="text-muted">Apps For You</li>
+                                    </ul>
+                                </div>
+
+                                <!-- Learn More Section -->
+                                <div class="col-md-2 col-lg-2 col-xl-2 mt-3">
+                                    <ul>
+                                        <li class="text-uppercase mb-4 font-weight-bold">Learn More</li>
+                                        <li class="text-muted">Privacy</li><br>
+                                        <li class="text-muted">Security</li><br>
+                                        <li class="text-muted">Terms</li><br>
+                                        <li class="text-muted">Sitemap</li>
+                                    </ul>
+                                </div>
+
+                                <!-- Social Links Section -->
+                                <div class="col-md-2 col-lg-2 col-xl-2 mt-3">
+                                    <ul>
+                                        <li class="text-uppercase mb-4 font-weight-bold">Social links</li>
+                                        <li class="text-muted"><svg class="" style="width: 1rem;"
+                                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                                <path
+                                                    d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z" />
+                                            </svg>
+                                            <svg style="width: 1rem;" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 448 512">
+                                                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                                <path
+                                                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+                                            </svg>
+                                            <svg style="width: 1rem;" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 512 512">
+                                                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                                <path
+                                                    d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                                            </svg>
+                                            <svg style="width: 1rem;" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 576 512">
+                                                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                                <path
+                                                    d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z" />
+                                            </svg>
+                                            <svg style="width: 1rem;" xmlns="http://www.w3.org/2000/svg"
+                                                viewBox="0 0 448 512">
+                                                <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                                                <path
+                                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                                            </svg>
+                                        </li><br>
+                                        <li class="text-muted"><img width="100rem" src="./assets/apple.webp" alt="">
+                                        </li><br>
+                                        <li class="text-muted"><img width="100rem" src="./assets/googlePlay.webp"
+                                                alt=""></li><br>
+                                    </ul>
+                                </div>
+                            </div>
+                            <hr class="mb-0">
+
+                            <!-- Social media icons & App store links -->
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                                    <p class="text-md-left"
+                                        style="font-size: 13px; padding: 0px !important; margin: 0px !important;">By
+                                        continuing past this page, you agree to our Terms of Service, Cookie Policy,
+                                        Privacy Policy and Content Policies. All trademarks are properties of their
+                                        respective owners. 2008-2024 © Zomato™ Ltd. All rights reserved.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--------------------------------------------------------------
+           ---------------- Start the modal-page--------------
+     --------------------------------------------------------------->
+
+    <!-- Login Modal -->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="p-3">
+                        <div class="row">
+                            <div class="col-6 col-md-6 col-sm-6 col-lg-6">
+                                <h1 class="modal-title fs-5" style="font-size: 30px !important;" id="exampleModalLabel">
+                                    LogIn</h1>
+                            </div>
+                            <div class="col-6 col-md-6 col-sm-6 col-lg-6 mt-3 d-flex justify-content-end">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                        </div>
+                        <form action="" class="my-4">
+                            <div class="form-group">
+                                <label for="Number" class="mb-1 text-muted">Mobile Number</label>
+                                <input type="text" id="Number" class="form-control" placeholder="+91">
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button type="button" class="btn btn-danger text-light my-3"
+                                    style="color: #ef4f5f; width: 100%;">Send One Time Password</button>
+                            </div>
+                        </form>
+                        <div>
+                            <a href="#" class="text-muted" style="text-decoration: none; color: #000;">New to Zomato?
+                                <span style="color: #ef4f5f;">Create account</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SignUp Modal -->
+    <div class="modal fade" id="SignUpModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="p-3">
+                        <div class="row">
+                            <div class="col-6 col-md-6 col-sm-6 col-lg-6">
+                                <h1 class="modal-title fs-5" style="font-size: 30px !important;" id="exampleModalLabel">
+                                    Sign Up</h1>
+                            </div>
+                            <div class="col-6 col-md-6 col-sm-6 col-lg-6 mt-3 d-flex justify-content-end">
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                        </div>
+                        <form action="" class="my-4">
+                            <div class="form-group mb-3">
+                                <label for="FullName" class="mb-1 text-muted">Full Name</label>
+                                <input type="text" id="FullName" class="form-control" placeholder="Full Name">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label for="Email" class="mb-1 text-muted">Email</label>
+                                <input type="text" id="Email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="form-group mb-3">
+                                <input type="checkbox" id="Email" placeholder="Email">
+                                <span class="text-muted" style="text-decoration: none; color: #000; font-size: 13px;">I
+                                    agree to Zomato's<span style="color: #ef4f5f;">Terms of Service, Privacy Policy
+                                    </span> <span>and</span> <span style="color: #ef4f5f;">Content
+                                        Policies</span></span>
+                                </span>
+                            </div>
+                            <div class="d-flex justify-content-center">
+                                <button type="button" class="btn btn-danger text-light my-3"
+                                    style="color: #ef4f5f; width: 100%;">Created Account</button>
+                            </div>
+                        </form>
+                        <div>
+                            <a href="#" class="text-muted" style="text-decoration: none; color: #000;">Already have an
+                                account? <span style="color: #ef4f5f;">Log in</span></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include Bootstrap and jQuery dependencies -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
